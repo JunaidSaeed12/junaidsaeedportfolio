@@ -1,0 +1,521 @@
+/* 
+* Project Detail Page - AI Avatar
+* Additional styles for Junaid Saeed portfolio
+*/
+
+/* Project Header Styles */
+.project-header {
+    margin-bottom: 50px;
+  }
+  
+  .project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+  }
+  
+  .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .meta-item i {
+    font-size: 18px;
+    color: var(--primary-color);
+  }
+  
+  .full-width-image {
+    width: 100%;
+    height: auto;
+    border-radius: var(--card-border-radius);
+    object-fit: cover;
+  }
+  
+  /* Client Quote Styles */
+  .client-quote {
+    padding: 40px;
+    margin: 40px 0;
+    position: relative;
+    text-align: center;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid var(--glass-border);
+  }
+  
+  .quote-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--accent-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+  }
+  
+  .quote-icon i {
+    font-size: 24px;
+    color: var(--primary-color);
+  }
+  
+  .client-quote blockquote {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    font-style: italic;
+    color: var(--text-light);
+    margin-bottom: 30px;
+  }
+  
+  .client-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .client-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--primary-color);
+  }
+  
+  .client-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .client-details h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 0;
+  }
+  
+  .client-details p {
+    font-size: 14px;
+    color: var(--text-gray);
+    margin-bottom: 0;
+  }
+  
+  /* Project Description */
+  .project-description {
+    margin: 40px 0;
+  }
+  
+  .project-description h3, 
+  .solution-approach h3, 
+  .results-section h3, 
+  .client-feedback h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--text-white);
+  }
+  
+  .project-description p, 
+  .results-section p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--text-gray);
+  }
+  
+  /* Challenges Section */
+  .project-challenges {
+    padding: 40px;
+    margin: 40px 0;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid var(--glass-border);
+  }
+  
+  .challenges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .challenge-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .challenge-icon {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    border-radius: 50%;
+    background: var(--accent-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .challenge-icon i {
+    font-size: 20px;
+    color: var(--primary-color);
+  }
+  
+  .challenge-content h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--text-white);
+    margin-top: 0;
+  }
+  
+  .challenge-content p {
+    margin-bottom: 0;
+    color: var(--text-gray);
+  }
+  
+  /* Process Steps */
+  .process-steps {
+    margin: 40px 0;
+  }
+  
+  .process-step {
+    display: flex;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .step-number {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--text-white);
+    margin-right: 20px;
+    font-size: 20px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .step-content {
+    padding-bottom: 20px;
+  }
+  
+  .step-content h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    margin-top: 0;
+  }
+  
+  .step-content p {
+    margin-bottom: 0;
+    color: var(--text-gray);
+  }
+  
+  .process-step::after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    width: 2px;
+    height: calc(100% - 30px);
+    background: rgba(0, 184, 212, 0.2);
+    z-index: 1;
+  }
+  
+  .process-step:last-child::after {
+    display: none;
+  }
+  
+  /* Technical Details */
+  .technical-details {
+    padding: 40px;
+    margin: 40px 0;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid var(--glass-border);
+  }
+  
+  .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .tech-column h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: var(--text-white);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .tech-column h4 i {
+    color: var(--primary-color);
+  }
+  
+  .tech-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .tech-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    color: var(--text-gray);
+  }
+  
+  .tech-list li::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-size: 14px;
+  }
+  
+  /* Results Grid */
+  .results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 30px 0;
+  }
+  
+  .result-card {
+    padding: 30px;
+    text-align: center;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid var(--glass-border);
+  }
+  
+  .result-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: var(--accent-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+  }
+  
+  .result-icon i {
+    font-size: 28px;
+    color: var(--primary-color);
+  }
+  
+  .result-card h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--text-white);
+  }
+  
+  .result-card p {
+    margin-bottom: 0;
+    color: var(--text-gray);
+  }
+  
+  /* Testimonials Grid */
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 30px 0;
+  }
+  
+  .testimonial-card {
+    padding: 30px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid var(--glass-border);
+  }
+  
+  .testimonial-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--text-light);
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .testimonial-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--primary-color);
+  }
+  
+  .author-info h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-top: 0;
+    color: var(--text-white);
+  }
+  
+  .author-info p {
+    font-size: 14px;
+    color: var(--text-gray);
+    margin-bottom: 0;
+  }
+  
+  /* Conclusion CTA */
+  .conclusion-cta {
+    padding: 40px;
+    text-align: center;
+    margin: 50px 0;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid var(--glass-border);
+  }
+  
+  .conclusion-cta h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--text-white);
+  }
+  
+  .conclusion-cta p {
+    font-size: 16px;
+    color: var(--text-gray);
+    margin-bottom: 25px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Audio Waveform */
+  .audio-waveform {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 3px;
+    padding: 0 15px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+    border-bottom-left-radius: var(--card-border-radius);
+    border-bottom-right-radius: var(--card-border-radius);
+    overflow: hidden;
+  }
+  
+  .waveform-bar {
+    flex: 1;
+    background: var(--primary-color);
+    height: 15px;
+    max-width: 6px;
+    border-radius: 3px;
+    animation: waveform 1.5s ease-in-out infinite;
+    animation-delay: calc(var(--bar-index, 0) * 0.06s);
+  }
+  
+  @keyframes waveform {
+    0%, 100% {
+      height: calc(5px + var(--bar-height, 15px) * 0.3);
+    }
+    50% {
+      height: calc(var(--bar-height, 15px) * 0.8);
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 992px) {
+    .challenges-grid,
+    .tech-grid,
+    .results-grid,
+    .testimonials-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .project-meta {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+    
+    .challenge-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .challenges-grid,
+    .tech-grid,
+    .results-grid,
+    .testimonials-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .process-step {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .step-number {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+    
+    .process-step::after {
+      display: none;
+    }
+    
+    .tech-column h4 {
+      justify-content: center;
+    }
+    
+    .tech-list li {
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .client-quote blockquote {
+      font-size: 1rem;
+    }
+    
+    .project-description h3, 
+    .solution-approach h3, 
+    .results-section h3, 
+    .client-feedback h3 {
+      font-size: 24px;
+    }
+    
+    .technical-details,
+    .project-challenges,
+    .conclusion-cta,
+    .client-quote {
+      padding: 25px;
+    }
+  }
